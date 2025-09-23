@@ -15,7 +15,7 @@ function App() {
      <Header lang={lang} setLang={setLang} />
      <HeroSection lang={lang} />
      <Skills lang={lang}  />
-      <Profile />
+      <Profile lang={lang} />
       <Projects />
     </>
   )

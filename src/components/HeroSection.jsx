@@ -11,13 +11,13 @@ function HeroSection({lang}) {
       <div className="flex flex-col md:flex-row items-center md:justify-center">
         <div className="md:w-1/2 flex flex-col items-start gap-12">
         
-        <h3 className="text-4xl font-bold">{heroData.greeting} 👋</h3>
-        <p className="font-semibold text-2xl mt-2">
+        <h3 className="text-xl font-normal">{heroData.greeting} 👋</h3>
+        <p className="font-semibold text-2xl -mt-8">
           {heroData.intro}
     
           {lang === "en" ? 
             " I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!" : 
-            " Ben bir full-stack geliştiriciyim. Sağlam ve ölçeklenebilir Frontend ürünler oluşturabilirim. Hadi tanışalım!"
+            " Bir full-stack geliştiriciyim. Sağlam ve ölçeklenebilir Frontend ürünler oluşturabilirim. Hadi tanışalım!"
           }
         </p>
 
