@@ -8,13 +8,13 @@ import { useLocalStorage } from './hooks/useLocalStorage'
 
 
 function App() {
- const [lang,setLang] = useLocalStorage("lang", "en");
+  const [lang, setLang] = useLocalStorage("lang", "en");
 
   return (
     <>
-     <Header lang={lang} setLang={setLang} />
-     <HeroSection lang={lang} />
-     <Skills lang={lang}  />
+      <Header lang={lang} setLang={setLang} />
+      <HeroSection lang={lang} />
+      <Skills lang={lang} />
       <Profile lang={lang} />
       <Projects />
     </>

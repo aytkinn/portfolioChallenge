@@ -7,7 +7,9 @@ import LogoRedux from "./src/img/icon/icon-redux.png"
 import LogoNode from "./src/img/icon/icon-node.png"
 import LogoVsCode from "./src/img/icon/icon-vscode.png"
 import LogoFigma from "./src/img/icon/icon-figma.png"
-
+import ComputerLogo from "./src/img/projectsIcon/Rectangle37.png"
+import QuickitLogo from "./src/img/projectsIcon/quickit.png"
+import Computer2Logo from "./src/img/projectsIcon/Computer2.png"
 
 const data = {
   "en": {
@@ -41,13 +43,14 @@ const data = {
       ]
     },
     "profile": {
-      "basicInfo": {
+      "title": "Basic Informations",
+      "basicInfo": {        
         "date_of_birth": "25.02.1994",
         "birth_place": "Turkey/Gaziantep",
         "school": "Math Engineering",
-        "role": "Full-Stack Developer",        
-    },
-    "labels": {
+        "role": "Full-Stack Developer",
+      },
+      "labels": {
         "date_of_birth": "Date of Birth",
         "birth_place": "Birth Place",
         "school": "School",
@@ -56,9 +59,24 @@ const data = {
       "about": {
         "title": "About Me",
         "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris ipsum, bibendum id facilisis id, vestibulum quis diam. Phasellus in suscipit odio. Vivamus sit amet pretium quam. Sed a pretium augue. Ut vestibulum quis ante posuere sodales.",
-        "description2": "Integer aliquam erat non ante porttitor, id ullamcorper dolor tristique. Quisque iaculis neque nec lacus auctor, a pellentesque neque rutrum. Sed consequat venenatis metus, in dictum orci tempor ac."
+        
       }
-    }
+
+    }, "projects": [{
+      "title": "Absolute Acı Pizza Project",
+      "description": "An application where users can create and order the type of pizza they want.",
+      "imageUrl": ComputerLogo,
+      "tags": ["React", "Vercel", "Axios", "Router"],
+      "githubUrl": "https://github.com/ibrahim/random-jokes",
+      "liveUrl": "https://random-jokes-app.vercel.app"
+    }, {
+      "title": "Watch List Solution",
+      "description": "An app where everyone can list the movies and series they should watch. The most popular content on IMDB.",
+      "imageUrl": QuickitLogo,
+      "tags": ["React", "Node.js", "Express", "MongoDB"],
+      "githubUrl": "https://github.com/ibrahim/ecommerce",
+      "liveUrl": "https://ecommerce-app.vercel.app"
+    }],
   },
   "tr": {
     "heroSection": {
@@ -91,12 +109,13 @@ const data = {
       ]
     },
     "profile": {
-      "basicInfo": {
+      "title": "Genel Bilgiler",
+      "basicInfo": {        
         "date_of_birth": "25.02.1994",
         "birth_place": "Türkiye/Gaziantep",
         "school": "Matematik Mühendisliği",
         "role": "Full-Stack Developer",
-        
+
       },
       "labels": {
         "date_of_birth": "Doğum Tarihi",
@@ -104,13 +123,28 @@ const data = {
         "school": "Okul",
         "role": "Pozisyon"
       },
-      
+
       "about": {
         "title": "Hakkımda",
         "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris ipsum, bibendum id facilisis id, vestibulum quis diam. Phasellus in suscipit odio. Vivamus sit amet pretium quam. Sed a pretium augue. Ut vestibulum quis ante posuere sodales.",
-        "description2": "Integer aliquam erat non ante porttitor, id ullamcorper dolor tristique. Quisque iaculis neque nec lacus auctor, a pellentesque neque rutrum. Sed consequat venenatis metus, in dictum orci tempor ac."
+        
       }
-    }
+    },
+    "projects": [{
+      "title": "Gerçek Acı Pizza Projesi",
+      "description": "Kullanıcıların istedikleri türde pizzalar oluşturup sipariş verebileceği bir uygulama.",
+      "imageUrl": QuickitLogo,
+      "tags": ["React", "Vercel", "Axios", "Router"],
+      "githubUrl": "https://github.com/ibrahim/random-jokes",
+      "liveUrl": "https://random-jokes-app.vercel.app"
+    }, {
+      "title": "İzleme Listesi Projesi",
+      "description": "Herkesin izlemesi gereken filmleri ve dizileri listeleyebileceği bir uygulama. IMDB üzerinden en popüler içerikler.",
+      "imageUrl":Computer2Logo,
+      "tags": ["React", "Node.js", "Express", "MongoDB"],
+      "githubUrl": "https://github.com/ibrahim/ecommerce",
+      "liveUrl": "https://ecommerce-app.vercel.app"
+    }],
   }
 };
 export default data;
