@@ -15,13 +15,7 @@ function Header() {
       <a
         href="#"
         onClick={handleLangChange}
-        className={`ml-4 text-sm font-medium rounded-md py-1 px-2 shadow-md
-          ${
-            lang === 'en'
-              ? 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-400'
-              : 'bg-pink-500 text-white hover:bg-pink-600'
-          }`
-        }
+        className={`ml-4 text-sm font-medium rounded-md py-1 px-2 shadow-md` }
       >
         {lang === 'en' ? (
           <>
