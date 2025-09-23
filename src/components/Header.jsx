@@ -1,5 +1,6 @@
-
 import DarkModeToggle from "./darkModeToggle";
+
+
 
 function Header({ lang, setLang }) {
 
@@ -28,7 +29,7 @@ function Header({ lang, setLang }) {
         )}
       </a>
       {/* Dark Mode Butonu */}
-      <DarkModeToggle/> 
+      <DarkModeToggle/>
     </header>
   );
 }
