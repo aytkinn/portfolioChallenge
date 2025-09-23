@@ -21,7 +21,7 @@ function HeroSection({lang}) {
           }
         </p>
 
-        <div className="flex gap-4 mt-6">
+        <div className="flex gap-4 mt-8">
           {heroData.socials.map((social, index) => (
             <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
               <img src={social.logo} alt={social.alt_text} className="w-8 h-8" />
@@ -38,7 +38,10 @@ function HeroSection({lang}) {
         />
       </div>
       </div>
-      <p className='text-[8px] self-center mt-[2px]'>Currently <span className='text-pink-500 font  '> Freelancing</span> for <span className='text-pink-500 '> UX, UI & Web Desing </span> Project. Invite me to join your team <span className='text-pink-500 '>aytkinn21@gmail.com</span></p>
+      <div className='text-left mt-5'>
+        <p className='text-[12px] self-center'>Currently <span className='text-pink-500 font  '> Freelancing</span> for <span className='text-pink-500 '> UX, UI & Web Desing </span> Project.</p>
+         <p className='text-[12px] self-center'>Invite me to join your team → <span className='text-pink-500 '>  aytkinn21@gmail.com</span></p>
+      </div>
    
       </section>    
   );

@@ -24,17 +24,30 @@ const data = {
       "title": "Skills",
       "skills": [
         {
-          "name": "HTML",
-          "icon": "icon-html.png"
-        },
-        {
-          "name": "CSS",
-          "icon": "icon-css.png"
-        },
-        {
           "name": "JavaScript",
-          "icon": "icon-js.png"
+          "icon": "./src/img/icon/icon-js.png"
+        },
+        {
+          "name": "REACT",
+          "icon": "./src/img/icon/icon-react.png"
+        },
+        {
+          "name": "REDUX",
+          "icon": "./src/img/icon/icon-redux.png"
+        },
+        {
+          "name": "NODE",
+          "icon": "./src/img/icon/icon-node.png"
+        },
+        {
+          "name": "VS CODE",
+          "icon": "./src/img/icon/icon-vscode.png"
+        },
+        {
+          "name": "FIGMA",
+          "icon": "./src/img/icon/icon-figma.png"
         }
+        
       ]
     }
   },
@@ -61,16 +74,28 @@ const data = {
       "title": "Yetenekler",
       "skills": [
         {
-          "name": "HTML",
-          "icon": "icon-html.png"
-        },
-        {
-          "name": "CSS",
-          "icon": "icon-css.png"
-        },
-        {
           "name": "JavaScript",
-          "icon": "icon-js.png"
+          "icon": "./src/img/icon/icon-js.png"
+        },
+        {
+          "name": "REACT",
+          "icon": "./src/img/icon/icon-react.png"
+        },
+        {
+          "name": "REDUX",
+          "icon": "./src/img/icon/icon-redux.png"
+        },
+        {
+          "name": "NODE",
+          "icon": "./src/img/icon/icon-node.png"
+        },
+        {
+          "name": "VS CODE",
+          "icon": "./src/img/icon/icon-vscode.png"
+        },
+        {
+          "name": "FIGMA",
+          "icon": "./src/img/icon/icon-figma.png"
         }
       ]
     }
