@@ -9,7 +9,7 @@ import LogoVsCode from "./src/img/icon/icon-vscode.png"
 import LogoFigma from "./src/img/icon/icon-figma.png"
 import ComputerLogo from "./src/img/projectsIcon/Rectangle37.png"
 import QuickitLogo from "./src/img/projectsIcon/quickit.png"
-import Computer2Logo from "./src/img/projectsIcon/Computer2.png"
+import Computer2Logo from "./src/img/projectsIcon/computer2.png"
 
 const data = {
   "en": {
