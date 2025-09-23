@@ -4,7 +4,7 @@ function DarkModeToggle() {
         <div className="flex items-center space-x-2">
         <label className="relative inline-flex items-center cursor-pointer">
           <input type="checkbox" value="" className="sr-only peer" />
-          <div className="w-14 h-4 bg-black peer-focus:outline-none rounded-full  peer peer-checked:after:translate-x-[41px] 
+          <div className="w-14 h-4 bg-black peer-focus:outline-none rounded-full  peer peer-checked:after:translate-x-[42px] 
           peer-checked:after:border-white after:content-[''] 
           after:absolute after:top-[2px] after:left-[1px] 
           after:bg-yellow-400  after:border-gray-300 

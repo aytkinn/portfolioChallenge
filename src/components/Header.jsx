@@ -1,4 +1,4 @@
-import DarkModeToggle from "./dark-mode-toggle.jsx";
+import DarkModeToggle from "./DarkModeToggle.jsx";
 
 
 
@@ -12,7 +12,6 @@ function Header({ lang, setLang }) {
 
   return (
     <header className="flex flex-row-reverse p-5">
-      {/* Dil Butonu */}
       <a
         href="#"
         onClick={handleLangChange}
@@ -28,7 +27,6 @@ function Header({ lang, setLang }) {
           </>
         )}
       </a>
-      {/* Dark Mode Butonu */}
       <DarkModeToggle />
     </header>
   );
