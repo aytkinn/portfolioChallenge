@@ -1,4 +1,4 @@
-import DarkModeToggle from "./darkModeToggle";
+import DarkModeToggle from "./dark-mode-toggle.jsx";
 
 
 
@@ -29,7 +29,7 @@ function Header({ lang, setLang }) {
         )}
       </a>
       {/* Dark Mode Butonu */}
-      <DarkModeToggle/>
+      <DarkModeToggle />
     </header>
   );
 }
