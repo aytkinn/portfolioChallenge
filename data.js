@@ -32,47 +32,33 @@ const data = {
     "skillsSection": {
       "title": "Skills",
       "skills": [
-        {
-          "name": "JavaScript",
-          "icon": LogoJavaScript
-        },
-        {
-          "name": "REACT",
-          "icon": LogoReact
-        },
-        {
-          "name": "REDUX",
-          "icon": LogoRedux
-        },
-        {
-          "name": "NODE",
-          "icon": LogoNode
-        },
-        {
-          "name": "VS CODE",
-          "icon": LogoVsCode
-        },
-        {
-          "name": "FIGMA",
-          "icon": LogoFigma
-        }
-        
+        { "name": "JavaScript", "icon": LogoJavaScript },
+        { "name": "REACT", "icon": LogoReact },
+        { "name": "REDUX", "icon": LogoRedux },
+        { "name": "NODE", "icon": LogoNode },
+        { "name": "VS CODE", "icon": LogoVsCode },
+        { "name": "FIGMA", "icon": LogoFigma }
       ]
     },
-     "profile": {
-    "basicInfo": {
-      "date_of_birth": "25.02.1994",
-      "birth_place": "Turkey/Gaziantep",
-      "school": "Math Engineering",
-      "role": "Full-Stack Developer",
+    "profile": {
+      "basicInfo": {
+        "date_of_birth": "25.02.1994",
+        "birth_place": "Turkey/Gaziantep",
+        "school": "Math Engineering",
+        "role": "Full-Stack Developer",        
     },
-    "about":{
-      "title": "About Me",
-      "description 1":"Lorem Ipsum, Lorem Picsum",
-      "description 2":"Lorem Ipsum, Lorem Picsum"
+    "labels": {
+        "date_of_birth": "Date of Birth",
+        "birth_place": "Birth Place",
+        "school": "School",
+        "role": "Role"
+      },
+      "about": {
+        "title": "About Me",
+        "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris ipsum, bibendum id facilisis id, vestibulum quis diam. Phasellus in suscipit odio. Vivamus sit amet pretium quam. Sed a pretium augue. Ut vestibulum quis ante posuere sodales.",
+        "description2": "Integer aliquam erat non ante porttitor, id ullamcorper dolor tristique. Quisque iaculis neque nec lacus auctor, a pellentesque neque rutrum. Sed consequat venenatis metus, in dictum orci tempor ac."
+      }
     }
-  },
- 
   },
   "tr": {
     "heroSection": {
@@ -96,45 +82,35 @@ const data = {
     "skillsSection": {
       "title": "Yetenekler",
       "skills": [
-        {
-          "name": "JavaScript",
-          "icon": LogoJavaScript
-        },
-        {
-          "name": "REACT",
-          "icon": LogoReact
-        },
-        {
-          "name": "REDUX",
-          "icon": LogoRedux
-        },
-        {
-          "name": "NODE",
-          "icon": LogoNode
-        },
-        {
-          "name": "VS CODE",
-          "icon": LogoVsCode
-        },
-        {
-          "name": "FIGMA",
-          "icon": LogoFigma
-        }
+        { "name": "JavaScript", "icon": LogoJavaScript },
+        { "name": "REACT", "icon": LogoReact },
+        { "name": "REDUX", "icon": LogoRedux },
+        { "name": "NODE", "icon": LogoNode },
+        { "name": "VS CODE", "icon": LogoVsCode },
+        { "name": "FIGMA", "icon": LogoFigma }
       ]
-    }, "profile": {
-    "basicInfo": {
-      "date_of_birth": "25.02.1994",
-      "birth_place": "Türkiye/Gaziantep",
-      "school": "Matematik Mühendisliği",
-      "role": "Full-Stack Developer",
     },
-    "about":{
-      "title": "About Me",
-      "description1":"Lorem Ipsum, Lorem Picsum",
-      "description2":"Lorem Ipsum, Lorem Picsum"
-    },
-  },
-    
+    "profile": {
+      "basicInfo": {
+        "date_of_birth": "25.02.1994",
+        "birth_place": "Türkiye/Gaziantep",
+        "school": "Matematik Mühendisliği",
+        "role": "Full-Stack Developer",
+        
+      },
+      "labels": {
+        "date_of_birth": "Doğum Tarihi",
+        "birth_place": "Doğum Yeri",
+        "school": "Okul",
+        "role": "Pozisyon"
+      },
+      
+      "about": {
+        "title": "Hakkımda",
+        "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris ipsum, bibendum id facilisis id, vestibulum quis diam. Phasellus in suscipit odio. Vivamus sit amet pretium quam. Sed a pretium augue. Ut vestibulum quis ante posuere sodales.",
+        "description2": "Integer aliquam erat non ante porttitor, id ullamcorper dolor tristique. Quisque iaculis neque nec lacus auctor, a pellentesque neque rutrum. Sed consequat venenatis metus, in dictum orci tempor ac."
+      }
+    }
   }
 };
 export default data;
