@@ -1,7 +1,7 @@
-import { useLocalStorage } from "../hooks/useLocalStorage"; 
 
-function Header() {
-  const [lang, setLang] = useLocalStorage("lang", "en");
+import DarkModeToggle from "./darkModeToggle";
+
+function Header({ lang, setLang }) {
 
   const handleLangChange = (e) => {
     e.preventDefault();
@@ -11,15 +11,15 @@ function Header() {
 
   return (
     <header className="flex flex-row-reverse p-5">
-
+      {/* Dil Butonu */}
       <a
         href="#"
         onClick={handleLangChange}
-        className={`ml-4 text-sm font-medium rounded-md py-1 px-2 shadow-md` }
+        className={`ml-4 text-xs font-light rounded-md py-1 px-2 shadow-2xs`}
       >
         {lang === 'en' ? (
           <>
-            <span className="text-pink-500">TÜRKÇE</span>'YE GEÇ
+            <span className="text-pink-500 ">TÜRKÇE</span>'YE GEÇ
           </>
         ) : (
           <>
@@ -27,15 +27,8 @@ function Header() {
           </>
         )}
       </a>
-
-      <div className="flex items-center space-x-2">
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input type="checkbox" value="" className="sr-only peer" />
-          <div className="w-11 h-6 bg-white peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[1px] after:left-[1px] after:bg-yellow-400 after:border-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-pink-500"></div>
-        </label>
-        <span className="text-sm font-medium">DARK MODE</span>
-        <span className="text-sm font-medium">|</span>
-      </div>
+      {/* Dark Mode Butonu */}
+      <DarkModeToggle/> 
     </header>
   );
 }

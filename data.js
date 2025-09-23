@@ -1,19 +1,19 @@
 import profileImage from "./src/img/Group02.png";
+
 const data = {
   "en": {
     "heroSection": {
       "greeting": "Hi!",
-      "intro": "I'm Ibrahim.",
-      "text":"I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!",
+      "intro": "I'm İbrahim.",
       "profileImage": profileImage,
       "socials": [
         {
-          "logo": "logo-linkedin.png",
+          "logo": "./src/img/logo-linkedin.png",
           "alt_text": "linkedin",
           "link": "https://example.com"
         },
         {
-          "logo": "logo-github.png",
+          "logo": "./src/img/logo-github.png",
           "alt_text": "github",
           "link": "https://github.com"
         }
@@ -42,16 +42,15 @@ const data = {
     "heroSection": {
       "greeting": "Merhaba!",
       "intro": "Ben İbrahim.",
-      "text":"Ben bir full-stack geliştiriciyim. Sağlam ve ölçeklenebilir Frontend ürünler oluşturabilirim. Hadi tanışalım!",
-      "profileImage": "profile-image.jpg",
+      "profileImage": profileImage,
       "socials": [
         {
-          "logo": "logo-linkedin.png",
+          "logo": "./src/img/logo-linkedin.png",
           "alt_text": "linkedin",
           "link": "https://example.com"
         },
         {
-          "logo": "logo-github.png",
+          "logo": "./src/img/logo-github.png",
           "alt_text": "github",
           "link": "https://github.com"
         }
