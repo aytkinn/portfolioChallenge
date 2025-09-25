@@ -1,5 +1,3 @@
-// src/components/Skills.jsx
-
 import React from 'react';
 import  data  from "../../data";
 
@@ -7,8 +5,11 @@ function Skills({lang}) {
   const skillsData = data[lang].skillsSection.skills;
 
   return (
-    <section className="skills-section text-center p-8 mt-5 mb-20 border border-white bg-white shadow-md">
-
+    
+    <div>
+      
+      <section className="skills-section text-center p-8 mt-5 mb-5 border border-white bg-white ">
+      
       <h2 className="text-4xl font-medium mb-8">
         {data[lang].skillsSection.title}
       </h2>
@@ -22,7 +23,10 @@ function Skills({lang}) {
           </div>
         ))}
       </div>
+      <div className="absolute -ml-9 top-1/2 -translate-y-[66px] w-[45px] h-4 bg-gray-700rounded-lg" aria-hidden></div>
+
     </section>
+    </div>
   );
 }
 

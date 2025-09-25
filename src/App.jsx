@@ -17,7 +17,7 @@ function App() {
       <HeroSection lang={lang} />
       <Skills lang={lang} />
       <Profile lang={lang} />
-      <Projects />
+      <Projects lang={lang} />
     </div>
   )
 }

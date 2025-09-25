@@ -22,8 +22,10 @@ function Profile({lang}){
 
         <div className="md:w-1/2 p-8 ">
           <h3 className="text-medium font-medium mb-8 text-left ">{profileData.about.title}</h3>
+          <div className='w-[62px] h-4 bg-blue-300 rounded-sm -mt-11 -ml-3'></div>
           <div className='text-left'>
            <p>{profileData.about.description1} </p>
+           
           </div>
         </div>
 

@@ -14,9 +14,9 @@ function DarkModeToggle({ isDarkMode, setIsDarkMode }) {
             onChange={handleToggle}
             className="sr-only peer" 
           />
-          <div className="w-14 h-4 bg-black peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[30px] 
+          <div className="w-14 h-4 bg-black peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[40px] 
           peer-checked:after:border-white after:content-[''] 
-          after:absolute after:top-[2px] after:left-[1px] 
+          after:absolute after:top-[1px] after:left-[2px] 
           after:bg-yellow-400 after:border-gray-300 
           after:border after:rounded-full 
           after:h-3 after:w-3 

@@ -9,7 +9,11 @@ function Header({ lang, setLang, isDarkMode, setIsDarkMode }) {
   };
 
   return (
-    <header className="flex flex-row-reverse p-5">
+    
+    <header className="relative flex flex-row-reverse items-center p-5 overflow-x-hidden">
+      
+      <div className="absolute left-[170px] top-1/2 -translate-y-[66px] w-16  h-16 border-32 border-gray-700 rounded-full" aria-hidden></div>
+       
       <a
         href="#"
         onClick={handleLangChange}
@@ -26,7 +30,9 @@ function Header({ lang, setLang, isDarkMode, setIsDarkMode }) {
           </>
         )}
       </a>
+      
       <DarkModeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      
     </header>
   );
 }
