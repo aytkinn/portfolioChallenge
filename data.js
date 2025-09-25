@@ -62,7 +62,9 @@ const data = {
         
       }
 
-    }, "projects": [{
+    }, 
+    "projects": [{
+      "h1":"Projects",
       "title": "Absolute Acı Pizza Project",
       "description": "An application where users can create and order the type of pizza they want.",
       "imageUrl": ComputerLogo,
@@ -75,8 +77,20 @@ const data = {
       "imageUrl": QuickitLogo,
       "tags": ["React", "Node.js", "Express", "MongoDB"],
       "githubUrl": "https://github.com/ibrahim/ecommerce",
-      "liveUrl": "https://ecommerce-app.vercel.app"
+      "liveUrl": "https://ecommerce-app.vercel.app",
+      "text1":"View on GitHub",
+      "text2":"Go to App"
     }],
+    "projectsFooter": {
+      "titleLine1": "Let’s work together on ",
+      "titleLine2": " your next product.",
+      "links": [
+        { "label": "Github", "url": "https://github.com/aytkinn", "color": "blue" },
+        { "label": "Personal Blog", "url": "#", "color": "default" },
+        { "label": "Linkedin", "url": "https://www.linkedin.com/", "color": "blue" },
+        { "label": "Email", "url": "mailto:example@example.com", "color": "red" }
+      ]
+    }
   },
   "tr": {
     "heroSection": {
@@ -131,20 +145,33 @@ const data = {
       }
     },
     "projects": [{
+      "h1":"Projeler",
       "title": "Gerçek Acı Pizza Projesi",
       "description": "Kullanıcıların istedikleri türde pizzalar oluşturup sipariş verebileceği bir uygulama.",
       "imageUrl": QuickitLogo,
       "tags": ["React", "Vercel", "Axios", "Router"],
-      "githubUrl": "https://github.com/ibrahim/random-jokes",
-      "liveUrl": "https://random-jokes-app.vercel.app"
+      "githubUrl": "https://github.com/aytkinn/fsweb-s8-challenge-pizza.git",
+      "liveUrl": "https://github.com/aytkinn/portfolioChallenge.git",
+      "text1":"Github'da görüntüleyin",
+      "text2":"App'e git"
     }, {
       "title": "İzleme Listesi Projesi",
       "description": "Herkesin izlemesi gereken filmleri ve dizileri listeleyebileceği bir uygulama. IMDB üzerinden en popüler içerikler.",
       "imageUrl":Computer2Logo,
       "tags": ["React", "Node.js", "Express", "MongoDB"],
-      "githubUrl": "https://github.com/ibrahim/ecommerce",
-      "liveUrl": "https://ecommerce-app.vercel.app"
+      "githubUrl": "https://github.com/aytkinn/fsweb-s10g3-redux-watchlist-solution.git",
+      "liveUrl": "https://github.com/aytkinn/fsweb-s10g3-redux-watchlist-solution.git"
     }],
+    "projectsFooter": {
+      "titleLine1": "Birlikte çalışalım",
+      "titleLine2": "bir sonraki ürününüz için.",
+      "links": [
+        { "label": "Github", "url": "https://github.com/aytkinn", "color": "blue" },
+        { "label": "Kişisel Blog", "url": "#", "color": "default" },
+        { "label": "LinkedIn", "url": "https://www.linkedin.com/", "color": "blue" },
+        { "label": "E‑posta", "url": "mailto:example@example.com", "color": "red" }
+      ]
+    }
   }
 };
 export default data;

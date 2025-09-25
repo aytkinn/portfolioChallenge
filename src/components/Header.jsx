@@ -1,8 +1,6 @@
 import DarkModeToggle from "./DarkModeToggle.jsx";
 
-
-
-function Header({ lang, setLang }) {
+function Header({ lang, setLang, isDarkMode, setIsDarkMode }) {
 
   const handleLangChange = (e) => {
     e.preventDefault();
@@ -11,11 +9,16 @@ function Header({ lang, setLang }) {
   };
 
   return (
-    <header className="flex flex-row-reverse p-5">
+    
+    <header className="relative flex flex-row-reverse items-center p-5 overflow-x-hidden">
+      
+      <div className="absolute left-[170px] top-1/2 -translate-y-[66px] w-16  h-16 border-32 border-gray-700 rounded-full" aria-hidden></div>
+       
       <a
         href="#"
         onClick={handleLangChange}
         className={`ml-4 text-xs font-light rounded-md py-1 px-2 shadow-2xs`}
+        style={{ color: '#777777' }}
       >
         {lang === 'en' ? (
           <>
@@ -27,7 +30,9 @@ function Header({ lang, setLang }) {
           </>
         )}
       </a>
-      <DarkModeToggle />
+      
+      <DarkModeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      
     </header>
   );
 }

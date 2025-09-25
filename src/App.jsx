@@ -9,15 +9,16 @@ import { useLocalStorage } from './hooks/useLocalStorage'
 
 function App() {
   const [lang, setLang] = useLocalStorage("lang", "en");
+  const [isDarkMode, setIsDarkMode] = useLocalStorage("darkMode", false);
 
   return (
-    <>
-      <Header lang={lang} setLang={setLang} />
+    <div className={isDarkMode ? "dark" : ""}>
+      <Header lang={lang} setLang={setLang} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <HeroSection lang={lang} />
       <Skills lang={lang} />
       <Profile lang={lang} />
-      <Projects />
-    </>
+      <Projects lang={lang} />
+    </div>
   )
 }
 

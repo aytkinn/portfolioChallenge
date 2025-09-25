@@ -1,6 +1,9 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: 'Inter', sans-serif !important;
+}
 
 #root {
   max-width: 800px;
@@ -8,6 +11,80 @@
   padding: 2rem;
   text-align: center;
   background-color: #F4F4F4;
-  color:black
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+body {
+  background-color: #F4F4F4;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  background-color: #2A262B !important;
+  color: white !important;
+}
+
+.dark body {
+  background-color: #2A262B !important;
+  color: white !important;
+}
+
+.dark #root {
+  background-color: #2A262B !important;
+  color: white !important;
+}
+
+.dark section {
+  background-color: #2A262B !important;
+  color: white !important;
+}
+
+.dark div {
+  color: white !important;
+}
+
+.dark .border-white {
+  border-color: #3A343B !important;
+}
+
+.dark .border-gray-300 {
+  border-color: #3A343B !important;
+}
+
+.dark .bg-white {
+  background-color: #2A262B !important;
+}
+
+.dark .text-gray-500 {
+  color: #d1d5db !important;
+}
+
+.dark .text-gray-700 {
+  color: #d1d5db !important;
+}
+
+.dark .text-black {
+  color: white !important;
+}
+
+.dark .bg-gray-200 {
+  background-color: #3A343B !important;
+  color: #d1d5db !important;
+}
+
+.dark .skills-section,
+.dark .projects-section {
+  background-color: #484148 !important;
+}
+
+.dark .skills-card {
+  background-color: #484148 !important;
+  border-color: #484148 !important;
+}
+
+.dark .projects-card {
+  background-color: #484148 !important;
+  border-color: #484148 !important;
+}

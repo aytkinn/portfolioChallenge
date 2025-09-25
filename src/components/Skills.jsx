@@ -23,8 +23,7 @@ function Skills({lang}) {
           </div>
         ))}
       </div>
-      
-      <div className="absolute -ml-9 top-1/2 -translate-y-[66px] w-[45px] h-4 bg-pink-500 rounded-lg" aria-hidden></div>
+      <div className="absolute -ml-9 top-1/2 -translate-y-[66px] w-[45px] h-4 bg-gray-700rounded-lg" aria-hidden></div>
 
     </section>
     </div>
