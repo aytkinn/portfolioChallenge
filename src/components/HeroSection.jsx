@@ -21,7 +21,7 @@ function HeroSection({ lang }) {
                 " Bir full-stack geliştiriciyim. Sağlam ve ölçeklenebilir Frontend ürünler oluşturabilirim. Hadi tanışalım!"
               }
             </p>
-            <div className='w-[75px] h-4 bg-pink-500 rounded-sm -mt-28 -mr-2'></div>
+            <div className='w-[75px] h-4 bg-pink-500 rounded-sm -mt-19 -mr-2'></div>
           </div>
           <div className="flex gap-4 mt-20">
             {heroData.socials.map((social, index) => (
