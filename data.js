@@ -64,6 +64,7 @@ const data = {
 
     }, 
     "projects": [{
+      "h1":"Projects",
       "title": "Absolute Acı Pizza Project",
       "description": "An application where users can create and order the type of pizza they want.",
       "imageUrl": ComputerLogo,

@@ -7,8 +7,8 @@ function Projects() {
     const projectsData = data[lang].projects;
 
     return (
-        <section className='projects-section p-8 border border-white rounded-2xl py-5'>
-            <h1 className='text-center font-bold text-4xl mb-8'>Projects</h1>
+        <section className='projects-section p-8 border border-white  py-5'>
+            <h1 className="text-center text-4xl font-medium mb-8">Projects</h1>
 
             <div className='flex flex-col md:flex-row justify-center gap-8'>
                 {projectsData.map((project, index) => (
@@ -27,11 +27,11 @@ function Projects() {
                             ))}
                         </div>
                          <div className='flex justify-between items-center mt-4 '>
-                                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className='block mt-6 mr-4 text-black dark:text-white text-left hover:underline'>
+                                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className='block mt-6 mr-2 text-black dark:text-white text-left hover:underline'>
                                     {project.text1}
                                 </a>
                                 {project.liveUrl && (
-                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className='block mt-6 mr-4 text-black dark:text-white text-left'>
+                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className='block mt-6 mr-2 text-black dark:text-white text-left hover:underline'>
                                         →{project.text2}
                                     </a>
                                 )}

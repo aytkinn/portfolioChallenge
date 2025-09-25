@@ -4,7 +4,7 @@ function Profile({lang}){
     const profileData = data[lang].profile;
     return(
         <section className='p-8'>
-        <h3 className="text-center text-4xl font-bold mb-8">Profile</h3>
+        <h3 className="text-center text-4xl font-medium mb-8">Profile</h3>
        <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2 border border-white px-4 p-8 rounded-2xl shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
           <h3 className="text-medium font-medium mb-8 text-pink-400 text-left">{profileData.title}</h3>

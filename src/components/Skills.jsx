@@ -9,7 +9,7 @@ function Skills({lang}) {
   return (
     <section className="skills-section text-center p-8 mt-5 mb-20 border border-white bg-white shadow-md">
 
-      <h2 className="text-2xl font-medium mb-8">
+      <h2 className="text-4xl font-medium mb-8">
         {data[lang].skillsSection.title}
       </h2>
       <div className="flex flex-wrap justify-center gap-x-1 gap-y-2">
