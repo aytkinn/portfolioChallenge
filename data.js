@@ -145,6 +145,7 @@ const data = {
       }
     },
     "projects": [{
+      "h1":"Projeler",
       "title": "Gerçek Acı Pizza Projesi",
       "description": "Kullanıcıların istedikleri türde pizzalar oluşturup sipariş verebileceği bir uygulama.",
       "imageUrl": QuickitLogo,
