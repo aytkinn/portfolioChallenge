@@ -64,7 +64,10 @@ const data = {
 
     }, 
     "projects": [{
+<<<<<<< HEAD
       "h1":"Projects",
+=======
+>>>>>>> 0070ca8435d430bdb14b8b2112083c09b871c8e6
       "title": "Absolute Acı Pizza Project",
       "description": "An application where users can create and order the type of pizza they want.",
       "imageUrl": ComputerLogo,
