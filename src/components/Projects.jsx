@@ -1,8 +1,8 @@
 import React from 'react';
 import data from '../../data';
 
-function Projects({lang}) {
-    
+function Projects({ lang }) {
+
     const projectsData = data[lang].projects;
 
     return (
@@ -11,15 +11,15 @@ function Projects({lang}) {
 
             <div className='flex flex-col md:flex-row justify-center gap-8'>
                 {projectsData.map((project, index) => {
-                    
+
                     const bgColorClass = index % 2 === 0
                         ? 'bg-sky-100'
                         : 'bg-green-50';
 
                     return (
-                        
-                        <div 
-                            key={index} 
+
+                        <div
+                            key={index}
                             className={`projects-card md:w-3/4 lg:w-2/3 border border-gray-300 rounded-2xl p-8 shadow-md ${bgColorClass}`}
                         >
                             <div className='mb-4'>
@@ -59,32 +59,39 @@ function Projects({lang}) {
                             </div>
 
                         </div>
-                    ); 
+                    );
                 })}
             </div>
 
             <div className='mt-16 flex flex-col md:flex-row md:justify-center md:items-start gap-30'>
-              <div className='md:max-w-[60%] mx-auto md:mx-0 dark:text-white after:text-black'>
-                <h2 className='font-medium text-[25px] md:text-[25px] leading-[150%] tracking-[1%] text-center text-black dark:text-white'>
-                  {data[lang].projectsFooter.titleLine1}
-                </h2>
-                <div className='w-[145px] h-4 bg-blue-300/80 rounded-sm -mt-3.5 ml-23'></div>
-                <h2 className='mt-3 font-medium text-[25px] md:text-[25px] leading-[150%] tracking-[1%] text-center text-black dark:text-white'>
-                  {data[lang].projectsFooter.titleLine2}
-                </h2>
-              </div>
+                <div className='md:max-w-[60%] mx-auto md:mx-0'>
+                    <h2 className='font-medium text-[25px] md:text-[25px] leading-[150%] tracking-[1%] text-center'>
+                        {data[lang].projectsFooter.titleLine1}
+                    </h2>
+                    <div className='w-[145px] h-4 bg-blue-300/80 rounded-sm -mt-3.5 ml-23'></div>
+                    <h2 className='mt-3 font-medium text-[25px] md:text-[25px] leading-[150%] tracking-[1%] text-center'>
+                        {data[lang].projectsFooter.titleLine2}
+                    </h2>
+                </div>
 
-               <ul className='space-y-1 text-center md:text-left'>
+                <ul className='space-y-1 text-center md:text-left'>
                     {data[lang].projectsFooter.links.map((link, index) => {
-                        
-                        
+                        const colorClass =
+                            index % 4 === 0
+                                ? '!text-blue-600'
+                                : index % 4 === 1
+                                    ? 'dark:!text-black'
+                                    : index % 4 === 2
+                                        ? '!text-cyan-500'
+                                        : '!text-red-600';
+
                         return (
                             <li key={index}>
                                 <a
                                     href={link.url}
                                     target='_blank'
-                                    rel='noopener noreferrer'                                    
-                                    className="text-white" 
+                                    rel='noopener noreferrer'
+                                    className={`${colorClass} hover:underline`}
                                 >
                                     {link.label}
                                 </a>
