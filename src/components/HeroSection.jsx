@@ -6,7 +6,7 @@ function HeroSection({ lang }) {
   const heroData = data[lang].heroSection;
 
   return (
-    <section className="flex flex-col min-h-1 justify-between p-8">
+    <section className="relative flex flex-col min-h-1 justify-between p-8 overflow-hidden">
 
       <div className="flex flex-col md:flex-row items-center md:justify-center">
         <div className="md:w-1/2 flex flex-col items-start gap-12">
@@ -36,7 +36,7 @@ function HeroSection({ lang }) {
           <img
             src={heroData.profileImage}
             alt="Profile"
-            className="w-72 h-72 rounded-[32px] object-cover relative z-10"
+            className="w-72 h-72 translate-x-[25px] rounded-[32px] object-cover relative z-10"
           />
         </div>
       </div>
@@ -44,9 +44,7 @@ function HeroSection({ lang }) {
         <p className='text-[12px] self-center'>Currently <span className='text-pink-500 font  '> Freelancing</span> for <span className='text-pink-500 '> UX, UI & Web Desing </span> Project.</p>
         <p className='text-[12px] self-center'>Invite me to join your team → <span className='text-pink-500 '>  aytkinn21@gmail.com</span></p>
       </div>
-      <div className="relative w-0 h-0 overflow-hidden">
-        <div className="absolute left-[170px] top-[50%] -translate-y-[66px] w-16 h-16 border-8 border-pink-500 rounded-full" aria-hidden></div>
-      </div>
+      <div className='w-[145px] h-12 bg-pink-500/80 rounded-3xl -translate-y-[60px] -mx-[-660px] '></div>
 
 
     </section>

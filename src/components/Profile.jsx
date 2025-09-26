@@ -3,7 +3,8 @@ import data from '../../data';
 function Profile({lang}){
     const profileData = data[lang].profile;
     return(
-        <section className='p-8'>
+        <section className='relative p-8 overflow-hidden'>
+        
         <h3 className="text-center text-4xl font-medium mb-8">Profile</h3>
        <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2 border border-white px-4 p-8 rounded-2xl shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
@@ -21,7 +22,7 @@ function Profile({lang}){
 
 
         <div className="md:w-1/2 p-8 ">
-          <h3 className="text-medium font-medium mb-8 text-left ">{profileData.about.title}</h3>
+          <h3 className="playfair-display mb-8 text-left ">{profileData.about.title}</h3>
           <div className='w-[45px] h-4 bg-blue-300 rounded-sm -mt-11 -ml-2'></div>
           <div className='text-left'>
            <p>{profileData.about.description1} </p>

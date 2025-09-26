@@ -5,12 +5,16 @@ function Skills({lang}) {
   const skillsData = data[lang].skillsSection.skills;
 
   return (
-    
-    <div>
-      
-      <section className="skills-section text-center p-8 mt-5 mb-5 border border-white bg-white ">
-      
-      <h2 className="text-4xl font-medium mb-8">
+     <section className="relative text-center p-8 mt-5 mb-5 border border-white bg-white overflow-hidden">
+      <div
+        className="pointer-events-none absolute top-0 left-1/2 md:left-[60%] translate-x-[65px] -translate-y-1/2 w-16 h-16 border-8 border-gray-300 rounded-full overflow-visible"
+        aria-hidden
+      />
+       <div
+        className="pointer-events-none absolute top-0 left-1/2 md:left-[60%] translate-x-24 -translate-y-[73px] w-16 h-16 border-8 border-pink-500 rounded-full "
+        aria-hidden
+      />
+      <h2 className="text-4xl font-medium mb-16">
         {data[lang].skillsSection.title}
       </h2>
       <div className="flex flex-wrap justify-center gap-x-1 gap-y-2">
@@ -23,11 +27,9 @@ function Skills({lang}) {
           </div>
         ))}
       </div>
-      <div className="absolute -ml-9 top-1/2 -translate-y-[66px] w-[45px] h-4 bg-gray-700rounded-lg" aria-hidden></div>
-
+        <div className='w-[145px] h-10 bg-gray-700 rounded-3xl translate-y-[3px] mx-[-100px] overflow-visible '></div>
     </section>
-    </div>
-  );
+  )
 }
 
 export default Skills;

@@ -85,10 +85,10 @@ const data = {
       "titleLine1": "Let’s work together on ",
       "titleLine2": " your next product.",
       "links": [
-        { "label": "Github", "url": "https://github.com/aytkinn", "color": "blue" },
-        { "label": "Personal Blog", "url": "#", "color": "default" },
-        { "label": "Linkedin", "url": "https://www.linkedin.com/", "color": "blue" },
-        { "label": "Email", "url": "mailto:example@example.com", "color": "red" }
+        { "label": "Github", "url": "https://github.com/aytkinn" },
+        { "label": "Personal Blog", "url": "#"},
+        { "label": "Linkedin", "url": "https://www.linkedin.com/" },
+        { "label": "Email", "url": "mailto:aytkinn21@gmail.com" }
       ]
     }
   },
@@ -166,10 +166,10 @@ const data = {
       "titleLine1": "Birlikte çalışalım",
       "titleLine2": "bir sonraki ürününüz için.",
       "links": [
-        { "label": "Github", "url": "https://github.com/aytkinn", "color": "blue" },
-        { "label": "Kişisel Blog", "url": "#", "color": "default" },
-        { "label": "LinkedIn", "url": "https://www.linkedin.com/", "color": "blue" },
-        { "label": "E‑posta", "url": "mailto:example@example.com", "color": "red" }
+        { "label": "Github", "url": "https://github.com/aytkinn"  },
+        { "label": "Kişisel Blog", "url": "#" },
+        { "label": "LinkedIn", "url": "https://www.linkedin.com/" },
+        { "label": "E‑posta", "url": "mailto:aytkinn21@gmail.com"}
       ]
     }
   }
