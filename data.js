@@ -1,4 +1,4 @@
-import profileImage from "./src/img/Group02.png";
+import profileImage from "./src/img/profileFoto.png";
 import logoLinkedin from "./src/img/logo-linkedin.png";
 import logoGithub from "./src/img/logo-github.png";
 import LogoJavaScript from "./src/img/icon/icon-js.png"
@@ -43,6 +43,7 @@ const data = {
       ]
     },
     "profile": {
+      "titleh1":"Profile",
       "title": "Basic Informations",
       "basicInfo": {        
         "date_of_birth": "25.02.1994",
@@ -64,7 +65,7 @@ const data = {
 
     }, 
     "projects": [{
-      "h1":"Projects",
+      "titleh1":"Projects",
       "title": "Absolute Acı Pizza Project",
       "description": "An application where users can create and order the type of pizza they want.",
       "imageUrl": ComputerLogo,
@@ -123,6 +124,7 @@ const data = {
       ]
     },
     "profile": {
+      "titleh1":"Profil",
       "title": "Genel Bilgiler",
       "basicInfo": {        
         "date_of_birth": "25.02.1994",
@@ -145,7 +147,7 @@ const data = {
       }
     },
     "projects": [{
-      "h1":"Projeler",
+      "titleh1":"Projeler",
       "title": "Gerçek Acı Pizza Projesi",
       "description": "Kullanıcıların istedikleri türde pizzalar oluşturup sipariş verebileceği bir uygulama.",
       "imageUrl": QuickitLogo,

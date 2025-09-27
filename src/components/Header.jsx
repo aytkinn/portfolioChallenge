@@ -12,7 +12,7 @@ function Header({ lang, setLang, isDarkMode, setIsDarkMode }) {
     
     <header className="relative flex flex-row-reverse items-center p-5 overflow-x-hidden">
       
-      <div className="absolute left-[170px] top-1/2 -translate-y-[66px] w-16  h-16 border-32 border-gray-700 rounded-full" aria-hidden></div>
+      <div className="absolute left-[170px] top-1/2 -translate-y-[80px] w-20  h-20 border-45 border-gray-700 rounded-full"></div>
        
       <a
         href="#"

@@ -5,16 +5,12 @@ function Skills({lang}) {
   const skillsData = data[lang].skillsSection.skills;
 
   return (
-     <section className="relative text-center p-8 mt-5 mb-5 border border-white bg-white overflow-hidden">
+     <section className="relative text-center m-full p-[100px] mt-5 mb-5 border border-white bg-white overflow-y-hidden overflow-x-visible">
       <div
-        className="pointer-events-none absolute top-0 left-1/2 md:left-[60%] translate-x-[65px] -translate-y-1/2 w-16 h-16 border-8 border-gray-300 rounded-full overflow-visible"
-        aria-hidden
+        className="absolute top-0 left-1/2 md:left-[60%] translate-x-[65px] -translate-y-1/2 w-20 h-20 border-12 border-gray-300 rounded-full"
+        
       />
-       <div
-        className="pointer-events-none absolute top-0 left-1/2 md:left-[60%] translate-x-24 -translate-y-[73px] w-16 h-16 border-8 border-pink-500 rounded-full "
-        aria-hidden
-      />
-      <h2 className="text-4xl font-medium mb-16">
+      <h2 className="text-6xl font-medium mb-16">
         {data[lang].skillsSection.title}
       </h2>
       <div className="flex flex-wrap justify-center gap-x-1 gap-y-2">
@@ -27,7 +23,7 @@ function Skills({lang}) {
           </div>
         ))}
       </div>
-        <div className='w-[145px] h-10 bg-gray-700 rounded-3xl translate-y-[3px] mx-[-100px] overflow-visible '></div>
+        <div className='absolute w-[145px] h-10 bg-gray-700 rounded-3xl translate-y-[3px] mx-[-160px] '></div>
     </section>
   )
 }

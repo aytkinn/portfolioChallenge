@@ -6,35 +6,33 @@ function Projects({ lang }) {
     const projectsData = data[lang].projects;
 
     return (
-        <section className='projects-section p-8 border border-white py-5 space-y-16'>
-            <h1 className="text-center text-4xl font-medium mb-8">Projects</h1>
+        <section className='projects-section p-8 border border-white bg-white py-5 space-y-[110px]'>
+            <h1 className="text-center text-4xl font-medium mb-[75px] mt-[30px]">Projects</h1>
 
-            <div className='flex flex-col md:flex-row justify-center gap-8'>
+            <div className='flex flex-col md:flex-row justify-center gap-5 '>
                 {projectsData.map((project, index) => {
-
-                    const bgColorClass = index % 2 === 0
-                        ? 'bg-sky-100'
-                        : 'bg-green-50';
-
                     return (
 
                         <div
                             key={index}
-                            className={`projects-card md:w-3/4 lg:w-2/3 border border-gray-300 rounded-2xl p-8 shadow-md ${bgColorClass}`}
+                            className={`projects-card md:w-3/4 lg:w-2/3 rounded-2xl p-8 shadow-md ${index % 2 === 0
+                                    ? '!bg-[#DDEEFE] dark:bg-[#2D3235] '
+                                    : '!bg-[#D9F6F1] dark:bg-[#495351]'
+                                }`}
                         >
                             <div className='mb-4'>
-                                <h2 className='font-medium text-2xl mb-2'>{project.title}</h2>
+                                <h2 className='font-medium text-3xl mb-2'>{project.title}</h2>
                                 <p className='text-gray-700'>{project.description}</p>
                             </div>
 
-                            <div className='flex flex-wrap gap-2 pt-2'>
+                            <div className='flex flex-wrap gap-2 pt-2 mt-20'>
                                 {project.tags.map((tag, tagIndex) => (
-                                    <p key={tagIndex} className='bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-medium'>
+                                    <p key={tagIndex} className='bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-xl font-medium'>
                                         {tag}
                                     </p>
                                 ))}
                             </div>
-                            <div className='flex justify-between gap-6 mt-4 whitespace-nowrap '>
+                            <div className='flex justify-between gap-6 mt-20 whitespace-nowrap '>
                                 <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className='inline-flex items-center text-black dark:text-white hover:underline'>
                                     {project.text1 ?? (lang === 'tr' ? "Github'da görüntüleyin" : 'View on GitHub')}
                                 </a>
@@ -47,7 +45,7 @@ function Projects({ lang }) {
 
                             <div className="relative w-full h-auto mt-8">
                                 <img
-                                    src="./src/img/projectsIcon/Rectangle37.png"
+                                    src="/src/img/projectsIcon/Rectangle37.png"
                                     alt="Laptop Çerçevesi"
                                     className="relative z-10 w-full h-auto"
                                 />
@@ -63,13 +61,13 @@ function Projects({ lang }) {
                 })}
             </div>
 
-            <div className='mt-16 flex flex-col md:flex-row md:justify-center md:items-start gap-30'>
-                <div className='md:max-w-[60%] mx-auto md:mx-0'>
-                    <h2 className='font-medium text-[25px] md:text-[25px] leading-[150%] tracking-[1%] text-center'>
+            <div className='mb-16 mt-16 flex flex-col md:flex-row md:justify-center md:items-start gap-30'>
+                <div className='md:max-w-[60%] mx-auto md:mx-0 font-medium text-[50px] md:text-[50px] '>
+                    <h2 className=' leading-[150%] tracking-[1%] text-center'>
                         {data[lang].projectsFooter.titleLine1}
                     </h2>
-                    <div className='w-[145px] h-4 bg-blue-300/80 rounded-sm -mt-3.5 ml-23'></div>
-                    <h2 className='mt-3 font-medium text-[25px] md:text-[25px] leading-[150%] tracking-[1%] text-center'>
+                    <div className='w-[295px] h-[18px] bg-[#82BBFF] rounded-sm -mt-6.5 ml-[138px]'></div>
+                    <h2 className='mt-3 leading-[150%] tracking-[1%] text-center'>
                         {data[lang].projectsFooter.titleLine2}
                     </h2>
                 </div>
@@ -91,7 +89,7 @@ function Projects({ lang }) {
                                     href={link.url}
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className={`${colorClass} hover:underline`}
+                                    className={`${colorClass} hover:underline text-3xl font-semibold`}
                                 >
                                     {link.label}
                                 </a>
