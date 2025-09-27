@@ -1,8 +1,13 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "../store/Actions/themeAction";
 
-function DarkModeToggle({ isDarkMode, setIsDarkMode }) {
+function DarkModeToggle() {
+  const dispatch=useDispatch();
+  const isDarkMode=useSelector(state=>state.theme.isDarkMode);
+  
     const handleToggle = () => {
-        setIsDarkMode(!isDarkMode);
+        dispatch(toggleTheme());
     };
 
     return(

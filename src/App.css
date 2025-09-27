@@ -19,66 +19,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #F4F4F4;
-  color: black;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
-body {
-  background-color: #F4F4F4;
-  color: black;
-  transition: background-color 0.3s ease, color 0.3s ease;
- 
-}
-
-.dark {
-  background-color: #2A262B ;
-  color: white ;
-}
-
-.dark projects-card {
-  background-color: #2A262B ;
-  border-color: #3A343B ;
-  color: white ;
-}
-
-
-.dark section {
-  background-color: #2A262B ;
-  color: white ;
-}
-
-.dark .border-white {
-  border-color: #3A343B ;
-}
-
-.dark .bg-white {
-  background-color: #484148 ;
-}
-
-.dark .text-gray-500 {
-  color: #d1d5db ;
-}
-
-.dark .text-gray-700 {
-  color: #d1d5db ;
-}
-
-.dark .text-black {
-  color: white ;
-}
-
-.dark .bg-gray-200 {
-  background-color: #3A343B ;
-  color: #d1d5db ;
-}
-
-.dark .skills-section{
-  background-color: #484148  ;
-}
-
-
-.dark .skills-card {
-  background-color: #484148 ;
-  border-color: #484148 ;
+.dark #root {
+  background-color: #2A262B;
 }

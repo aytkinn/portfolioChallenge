@@ -1,12 +1,26 @@
 import React from 'react';
-import data from "../../data";
+import data from "../data.js";
+import { useSelector } from 'react-redux';
 
-function HeroSection({ lang }) {
+function HeroSection() {
+  const currentLang = useSelector(state => state.language.currentLang) || 'en';
+  const isDarkMode = useSelector(state => state.theme.isDarkMode);
+  
+  if (!data || !data[currentLang] || !data[currentLang].heroSection) {
+    console.error('Data yüklenemedi!', { data, currentLang });
+    return <div>Data yükleniyor...</div>;
+  }
+  
 
-  const heroData = data[lang].heroSection;
+  const heroData = data[currentLang].heroSection;
 
   return (
-    <section className="relative flex flex-col justify-between p-8 overflow-hidden ml-[60px] md:ml-0">
+    <section className="relative flex flex-col justify-between p-8 overflow-hidden ml-[60px] md:ml-0" style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000'}}>
+      {/* Gri Elips - Skills ile bağlantı için */}
+      <div
+        className="absolute bottom-0 left-1/2 md:left-[60%] translate-x-[65px] translate-y-1/2 w-20 h-20 border-12 border-gray-300 rounded-full z-30"
+        style={{borderColor: isDarkMode ? '#3A343B' : '#d1d5db'}}
+      />
 
       <div className="flex flex-col md:flex-row items-center md:justify-center">
         <div className="md:w-1/2 flex flex-col items-start gap-12">
@@ -16,7 +30,7 @@ function HeroSection({ lang }) {
             <p className=" text-4xl font-medium leading-[50px]">
               {heroData.intro}
               
-              {lang === "en" ?
+              {currentLang === "en" ?
                 " I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!" :
                 " Bir full-stack geliştiriciyim. Sağlam ve ölçeklenebilir Frontend ürünler oluşturabilirim. Hadi tanışalım!"
               }
@@ -45,7 +59,7 @@ function HeroSection({ lang }) {
         <p className='text-[24px] self-center'>Currently <span className='text-pink-500 font  '> Freelancing</span> for <span className='text-pink-500 '> UX, UI & Web Desing </span> Project.</p>
         <p className='text-[24px] self-center'>Invite me to join your team → <span className='text-pink-500 '>  aytkinn21@gmail.com</span></p>
       </div>
-      <div className='w-[145px] h-12 bg-pink-500/80 rounded-3xl -translate-y-[60px] mx-[1100px] '></div>
+      <div className='w-[145px] h-12 bg-pink-500/80 rounded-3xl -translate-y-[60px] mx-[1100px]'></div>
 
 
     </section>

@@ -1,23 +1,26 @@
 import React from 'react';
-import  data  from "../../data";
+import  data  from "../data.js";
+import { useSelector } from 'react-redux';
 
-function Skills({lang}) {
-  const skillsData = data[lang].skillsSection.skills;
-
+function Skills() {
+  const currentLang = useSelector(state => state.language.currentLang) || 'en';
+  const isDarkMode = useSelector(state => state.theme.isDarkMode);
+  if (!data || !data[currentLang] || !data[currentLang].skillsSection) {
+    console.error('Skills data yüklenemedi!', { data, currentLang });
+    return <div>Skills data yükleniyor...</div>;
+  }
+  
+  const skillsData = data[currentLang].skillsSection.skills;
   return (
-     <section className="relative text-center m-full p-[100px] mt-5 mb-5 border border-white bg-white overflow-y-hidden overflow-x-visible">
-      <div
-        className="absolute top-0 left-1/2 md:left-[60%] translate-x-[65px] -translate-y-1/2 w-20 h-20 border-12 border-gray-300 rounded-full"
-        
-      />
-      <h2 className="text-6xl font-medium mb-16">
-        {data[lang].skillsSection.title}
+     <section className="relative text-center m-full p-[100px] border bg-white overflow-y-hidden overflow-x-visible" style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000', borderColor: isDarkMode ? '#3A343B' : '#ffffff'}}>
+      <h2 className="text-6xl font-medium mb-16" style={{color: isDarkMode ? '#ffffff' : '#000000'}}>
+        {data[currentLang].skillsSection.title}
       </h2>
       <div className="flex flex-wrap justify-center gap-x-1 gap-y-2">
         {skillsData.map((skill, index) => (
           <div key={index} className="flex flex-col items-center text-md font-medium cursor-pointer">
             <div className=" p-4 rounded-2xl">
-              <img src={skill.icon} alt={skill.name} className="w-16 h-16" />
+              <img src={skill.icon} alt={skill.name} className="w-26 h-26" />
             </div>
             <p className="mt-4 text-gray-500">{skill.name}</p>
           </div>
