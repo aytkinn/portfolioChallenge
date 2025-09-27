@@ -13,8 +13,8 @@ function Projects({ lang }) {
                 {projectsData.map((project, index) => {
                     
                     const bgColorClass = index % 2 === 0
-                        ? 'bg-[#DDEEFE] dark:bg-[#2D3235] '
-                        : 'bg-[#D9F6F1] dark:bg-[#495351] ';
+                        ? '!bg-[#DDEEFE] dark:bg-[#2D3235] '
+                        : '!bg-[#D9F6F1] dark:bg-[#495351] ';
                         
                         
 
@@ -24,24 +24,24 @@ function Projects({ lang }) {
                             key={index}
                             className={`projects-card md:w-3/4 lg:w-2/3  border border-gray-300 rounded-2xl p-8 shadow-md ${bgColorClass}`}
                         >
-                            <div className='mb-4'>
+                            <div className='mb-4 text-gray-700 '>
                                 <h2 className='font-medium text-3xl mb-2'>{project.title}</h2>
-                                <p className='text-gray-700'>{project.description}</p>
+                                <p className='text-2xl/8 font-semibold mt-10 '>{project.description}</p>
                             </div>
 
                             <div className='flex flex-wrap gap-2 pt-2 mt-20'>
                                 {project.tags.map((tag, tagIndex) => (
-                                    <p key={tagIndex} className='bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-xl font-medium'>
+                                    <p key={tagIndex} className='bg-white text-black rounded-full px-3 py-1 text-xl font-medium'>
                                         {tag}
                                     </p>
                                 ))}
                             </div>
-                            <div className='flex justify-between gap-6 mt-20 whitespace-nowrap '>
-                                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className='inline-flex items-center text-black dark:text-white hover:underline'>
+                            <div className='flex justify-between gap-6 mt-20 whitespace-nowrap !text-black'>
+                                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className='inline-flex items-center hover:underline'>
                                     {project.text1 ?? (lang === 'tr' ? "Github'da görüntüleyin" : 'View on GitHub')}
                                 </a>
                                 {project.liveUrl && (
-                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className='inline-flex items-center dark:text-white hover:underline'>
+                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className='inline-flex items-center hover:underline'>
                                         →   {project.text2 ?? (lang === 'tr' ? "App'e git" : 'Go to App')}
                                     </a>
                                 )}
@@ -49,7 +49,7 @@ function Projects({ lang }) {
 
                             <div className="relative w-full h-auto mt-8">
                                 <img
-                                    src="/src/img/projectsIcon/Rectangle37.png"
+                                    src={project.imageUrl}
                                     alt="Laptop Çerçevesi"
                                     className="relative z-10 w-full h-auto"
                                 />

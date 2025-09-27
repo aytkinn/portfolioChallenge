@@ -7,7 +7,7 @@ import LogoRedux from "./src/img/icon/icon-redux.png"
 import LogoNode from "./src/img/icon/icon-node.png"
 import LogoVsCode from "./src/img/icon/icon-vscode.png"
 import LogoFigma from "./src/img/icon/icon-figma.png"
-import ComputerLogo from "./src/img/projectsIcon/Rectangle37.png"
+import ComputerLogo from "./src/img/projectsIcon/laptop.png"
 import QuickitLogo from "./src/img/projectsIcon/quickit.png"
 import Computer2Logo from "./src/img/projectsIcon/computer2.png"
 
@@ -68,7 +68,7 @@ const data = {
       "titleh1":"Projects",
       "title": "Absolute Acı Pizza Project",
       "description": "An application where users can create and order the type of pizza they want.",
-      "imageUrl": ComputerLogo,
+      "imageUrl": Computer2Logo,
       "tags": ["React", "Vercel", "Axios", "Router"],
       "githubUrl": "https://github.com/ibrahim/random-jokes",
       "liveUrl": "https://random-jokes-app.vercel.app"
