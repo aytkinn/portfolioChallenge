@@ -49,7 +49,7 @@ function Projects({ lang }) {
 
                             <div className="relative w-full h-auto mt-8">
                                 <img
-                                    src="./src/img/projectsIcon/Rectangle37.png"
+                                    src="/src/img/projectsIcon/Rectangle37.png"
                                     alt="Laptop Çerçevesi"
                                     className="relative z-10 w-full h-auto"
                                 />
