@@ -35,22 +35,15 @@ body {
   color: white ;
 }
 
-.dark body {
+.dark projects-card {
   background-color: #2A262B ;
+  border-color: #3A343B ;
   color: white ;
 }
 
-.dark #root {
-  background-color: #2A262B ;
-  color: white ;
-}
 
 .dark section {
   background-color: #2A262B ;
-  color: white ;
-}
-
-.dark div {
   color: white ;
 }
 
@@ -58,12 +51,8 @@ body {
   border-color: #3A343B ;
 }
 
-.dark .border-gray-300 {
-  border-color: #3A343B ;
-}
-
 .dark .bg-white {
-  background-color: #2A262B ;
+  background-color: #484148 ;
 }
 
 .dark .text-gray-500 {
@@ -83,17 +72,12 @@ body {
   color: #d1d5db ;
 }
 
-.dark .skills-section,
-.dark .projects-section {
-  background-color: #484148 ;
+.dark .skills-section{
+  background-color: #484148  ;
 }
+
 
 .dark .skills-card {
-  background-color: #484148 ;
-  border-color: #484148 ;
-}
-
-.dark .projects-card {
   background-color: #484148 ;
   border-color: #484148 ;
 }

@@ -11,14 +11,18 @@ function Projects({ lang }) {
 
             <div className='flex flex-col md:flex-row justify-center gap-5 '>
                 {projectsData.map((project, index) => {
+                    
+                    const bgColorClass = index % 2 === 0
+                        ? 'bg-[#DDEEFE] dark:bg-[#2D3235] '
+                        : 'bg-[#D9F6F1] dark:bg-[#495351] ';
+                        
+                        
+
                     return (
 
                         <div
                             key={index}
-                            className={`projects-card md:w-3/4 lg:w-2/3 rounded-2xl p-8 shadow-md ${index % 2 === 0
-                                    ? '!bg-[#DDEEFE] dark:bg-[#2D3235] '
-                                    : '!bg-[#D9F6F1] dark:bg-[#495351]'
-                                }`}
+                            className={`projects-card md:w-3/4 lg:w-2/3  border border-gray-300 rounded-2xl p-8 shadow-md ${bgColorClass}`}
                         >
                             <div className='mb-4'>
                                 <h2 className='font-medium text-3xl mb-2'>{project.title}</h2>
@@ -45,7 +49,7 @@ function Projects({ lang }) {
 
                             <div className="relative w-full h-auto mt-8">
                                 <img
-                                    src="/src/img/projectsIcon/Rectangle37.png"
+                                    src="./src/img/projectsIcon/Rectangle37.png"
                                     alt="Laptop Çerçevesi"
                                     className="relative z-10 w-full h-auto"
                                 />
