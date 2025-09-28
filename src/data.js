@@ -66,6 +66,7 @@ const data = {
     }, 
     "projects": [{
       "titleh1":"Projects",
+      "computerUrl":ComputerLogo,
       "title": "Absolute Acı Pizza Project",
       "description": "An application where users can create and order the type of pizza they want.",
       "imageUrl": Computer2Logo,
@@ -73,6 +74,7 @@ const data = {
       "githubUrl": "https://github.com/ibrahim/random-jokes",
       "liveUrl": "https://random-jokes-app.vercel.app"
     }, {
+      "computerUrl": ComputerLogo,
       "title": "Watch List Solution",
       "description": "An app where everyone can list the movies and series they should watch. The most popular content on IMDB.",
       "imageUrl": QuickitLogo,
@@ -148,6 +150,7 @@ const data = {
     },
     "projects": [{
       "titleh1":"Projeler",
+      "computerUrl":ComputerLogo,
       "title": "Gerçek Acı Pizza Projesi",
       "description": "Kullanıcıların istedikleri türde pizzalar oluşturup sipariş verebileceği bir uygulama.",
       "imageUrl": QuickitLogo,
@@ -157,6 +160,7 @@ const data = {
       "text1":"Github'da görüntüleyin",
       "text2":"App'e git"
     }, {
+      "computerUrl": ComputerLogo,
       "title": "İzleme Listesi Projesi",
       "description": "Herkesin izlemesi gereken filmleri ve dizileri listeleyebileceği bir uygulama. IMDB üzerinden en popüler içerikler.",
       "imageUrl":Computer2Logo,
