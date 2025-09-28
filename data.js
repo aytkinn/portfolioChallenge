@@ -70,15 +70,15 @@ const data = {
       "description": "An application where users can create and order the type of pizza they want.",
       "imageUrl": Computer2Logo,
       "tags": ["React", "Vercel", "Axios", "Router"],
-      "githubUrl": "https://github.com/ibrahim/random-jokes",
-      "liveUrl": "https://random-jokes-app.vercel.app"
+      "githubUrl": "https://github.com/aytkinn/fsweb-s8-challenge-pizza.git",
+      "liveUrl": "https://github.com/aytkinn/fsweb-s8-challenge-pizza.git"
     }, {
       "title": "Watch List Solution",
       "description": "An app where everyone can list the movies and series they should watch. The most popular content on IMDB.",
       "imageUrl": QuickitLogo,
       "tags": ["React", "Node.js", "Express", "MongoDB"],
-      "githubUrl": "https://github.com/ibrahim/ecommerce",
-      "liveUrl": "https://ecommerce-app.vercel.app",
+      "githubUrl": "https://github.com/aytkinn/fsweb-s10g3-redux-watchlist-solution.git",
+      "liveUrl": "https://fsweb-s10g3-redux-watchlist-solutio-fawn.vercel.app/",
       "text1":"View on GitHub",
       "text2":"Go to App"
     }],
