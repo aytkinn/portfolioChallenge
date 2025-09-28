@@ -13,7 +13,7 @@ function Projects() {
     
     
         return (
-            <section className='projects-section p-8 border py-5 space-y-[110px]' style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000', borderColor: isDarkMode ? '#3A343B' : '#ffffff'}}>
+            <section className='projects-section p-8 border py-5 space-y-[110px]' style={{backgroundColor: isDarkMode ? '#484148' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000', borderColor: isDarkMode ? '#3A343B' : '#ffffff'}}>
                 <h1 className="text-center text-6xl font-medium mb-[75px] mt-[30px]" style={{color: isDarkMode ? '#ffffff' : '#000000'}}>{data[currentLang].projects[0].titleh1}</h1>
 
             <div className='flex flex-col md:flex-row justify-center gap-5 '>

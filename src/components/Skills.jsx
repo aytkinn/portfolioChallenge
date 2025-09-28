@@ -12,7 +12,7 @@ function Skills() {
   
   const skillsData = data[currentLang].skillsSection.skills;
   return (
-     <section className="relative text-center m-full p-[100px] border bg-white overflow-y-hidden overflow-x-visible" style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000', borderColor: isDarkMode ? '#3A343B' : '#ffffff'}}>
+     <section className="relative text-center m-full p-[100px] border bg-white overflow-y-hidden overflow-x-visible" style={{backgroundColor: isDarkMode ? '#484148' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000', borderColor: isDarkMode ? '#3A343B' : '#ffffff'}}>
       <h2 className="text-6xl font-medium mb-16" style={{color: isDarkMode ? '#ffffff' : '#000000'}}>
         {data[currentLang].skillsSection.title}
       </h2>

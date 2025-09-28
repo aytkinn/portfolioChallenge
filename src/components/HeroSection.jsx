@@ -15,7 +15,7 @@ function HeroSection({ onContactClick }) {
   const heroData = data[currentLang].heroSection;
 
   return (
-    <section className="relative flex flex-col justify-between p-8 overflow-hidden ml-[60px] md:ml-0" style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000'}}>
+    <section className="relative flex flex-col justify-between p-8 overflow-hidden ml-[60px] md:ml-0" style={{backgroundColor: isDarkMode ? '#2A262B' : '#F4F4F4', color: isDarkMode ? '#ffffff' : '#000000'}}>
 
       <div
         className="absolute bottom-0 left-1/2 md:left-[60%] translate-x-[65px] translate-y-1/2 w-20 h-20 border-12 border-gray-300 rounded-full z-30"

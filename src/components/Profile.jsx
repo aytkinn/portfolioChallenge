@@ -11,7 +11,7 @@ function Profile(){
     
     const profileData = data[currentLang].profile;
     return(
-        <section className='relative p-8 overflow-y-hidden' style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000'}}>        
+        <section className='relative p-8 overflow-y-hidden' style={{backgroundColor: isDarkMode ? '#2A262B' : '#F4F4F4', color: isDarkMode ? '#ffffff' : '#000000'}}>        
         <h3 className="text-center text-6xl font-medium mb-8" style={{color: isDarkMode ? '#ffffff' : '#000000'}}>{profileData.titleh1}</h3>
        <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2 border px-4 p-8 rounded-2xl shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]" style={{backgroundColor: isDarkMode ? '#484148' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000', borderColor: isDarkMode ? '#3A343B' : '#ffffff'}}>
