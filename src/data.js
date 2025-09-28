@@ -1,15 +1,15 @@
-import profileImage from "./img/profileFoto.png";
-import logoLinkedin from "./img/logo-linkedin.png";
-import logoGithub from "./img/logo-github.png";
-import LogoJavaScript from "./img/icon/icon-js.png"
-import LogoReact from "./img/icon/icon-react.png"
-import LogoRedux from "./img/icon/icon-redux.png"
-import LogoNode from "./img/icon/icon-node.png"
-import LogoVsCode from "./img/icon/icon-vscode.png"
-import LogoFigma from "./img/icon/icon-figma.png"
-import ComputerLogo from "./img/projectsIcon/laptop.png"
-import QuickitLogo from "./img/projectsIcon/quickit.png"
-import Computer2Logo from "./img/projectsIcon/computer2.png"
+import profileImage from "/img/profileFoto.png";
+import logoLinkedin from "/img/logo-linkedin.png";
+import logoGithub from "/img/logo-github.png";
+import LogoJavaScript from "/img/icon/icon-js.png"
+import LogoReact from "/img/icon/icon-react.png"
+import LogoRedux from "/img/icon/icon-redux.png"
+import LogoNode from "/img/icon/icon-node.png"
+import LogoVsCode from "/img/icon/icon-vscode.png"
+import LogoFigma from "/img/icon/icon-figma.png"
+import ComputerLogo from "/img/projectsIcon/laptop.png"
+import QuickitLogo from "/img/projectsIcon/quickit.png"
+import Computer2Logo from "/img/projectsIcon/computer2.png"
 
 const data = {
   "en": {

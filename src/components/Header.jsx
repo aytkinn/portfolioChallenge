@@ -17,7 +17,7 @@ function Header() {
     
     <header className="relative flex flex-row-reverse items-center p-5 overflow-hidden" style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000'}}>
       
-      <div className="absolute left-[240px] translate-y-[-30px] w-24 h-24 border bg-gray-900 border-gray-900 rounded-full z-30"></div>
+      <div className="absolute left-[240px] translate-y-[-30px] w-24 h-24 border bg-gray-700 border-gray-700 rounded-full z-30"></div>
        
       <a
         href="#"
