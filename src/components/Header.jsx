@@ -15,9 +15,9 @@ function Header() {
 
   return (
     
-    <header className="relative flex flex-row-reverse items-center p-5 overflow-x-hidden" style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000'}}>
+    <header className="relative flex flex-row-reverse items-center p-5 overflow-hidden" style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000'}}>
       
-      <div className="absolute left-[220px] top-1/2 -translate-y-[70px] w-10 h-10 border-45 border-gray-700 rounded-full"></div>
+      <div className="absolute left-[240px] translate-y-[-30px] w-24 h-24 border bg-gray-900 border-gray-900 rounded-full z-30"></div>
        
       <a
         href="#"

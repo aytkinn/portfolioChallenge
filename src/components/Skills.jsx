@@ -20,7 +20,7 @@ function Skills() {
         {skillsData.map((skill, index) => (
           <div key={index} className="flex flex-col items-center text-md font-medium cursor-pointer">
             <div className=" p-4 rounded-2xl">
-              <img src={skill.icon} alt={skill.name} className="w-26 h-26" />
+              <img src={skill.icon} alt={skill.name} className="w-24 h-24" />
             </div>
             <p className="mt-4 text-gray-500">{skill.name}</p>
           </div>

@@ -14,7 +14,7 @@ function Projects() {
     
         return (
             <section className='projects-section p-8 border py-5 space-y-[110px]' style={{backgroundColor: isDarkMode ? '#2A262B' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000', borderColor: isDarkMode ? '#3A343B' : '#ffffff'}}>
-                <h1 className="text-center text-4xl font-medium mb-[75px] mt-[30px]" style={{color: isDarkMode ? '#ffffff' : '#000000'}}>Projects</h1>
+                <h1 className="text-center text-6xl font-medium mb-[75px] mt-[30px]" style={{color: isDarkMode ? '#ffffff' : '#000000'}}>Projects</h1>
 
             <div className='flex flex-col md:flex-row justify-center gap-5 '>
                 {projectsData.map((project, index) => {
@@ -73,7 +73,7 @@ function Projects() {
                 })}
             </div>
 
-            <div className='mb-16 mt-16 flex flex-col md:flex-row md:justify-center md:items-start gap-30'>
+            <div className='mb-16 mt-16 flex flex-row justify-around'>
                 <div className='md:max-w-[60%] mx-auto md:mx-0 font-medium text-[50px] md:text-[50px]'>
                     <h2 className=' leading-[150%] tracking-[1%] text-center'>
                         {data[currentLang].projectsFooter.titleLine1}
