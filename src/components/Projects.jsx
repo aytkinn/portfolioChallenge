@@ -57,7 +57,7 @@ function Projects() {
 
                             <div className="relative w-full h-auto mt-8">
                                 <img
-                                    src="/img/projectsIcon/laptop.png"
+                                    src="/src/img/projectsIcon/laptop.png"
                                     alt="Laptop Çerçevesi"
                                     className="relative z-10 w-full h-auto"
                                 />
